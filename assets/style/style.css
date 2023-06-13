@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+.fonts{
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+}
+
+.blue{
+    color: #1D3557;
+}
+
+.red{
+    color: #F03A47;
+}
+
+h2{
+    text-align: center;
+}
+
+body{
+    background-color: #A8DADC;
+}
+
+nav{
+    background-color: #1D3557;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    position: relative;
+}
+  
+.navbar-nav .nav-item .nav-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #ffffff; /* Cambia il colore a tuo piacimento */
+    animation: underline 0.5s forwards;
+}
+  
+@keyframes underline {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+}
+  
+.navbar-nav .nav-item .nav-link:hover::after {
+    width: 100%;
+}
+  
+.navbar-nav .nav-item .nav-link::after {
+    width: 0;
+}
+  
+.navbar-nav .nav-item .nav-link:hover::after {
+    width: 100%;
+}
+
+.img{
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+.img-1{
+    background-image: url(../img/pexels-bedis-elacheche-891118.jpg);
+}
+
+.img-2{
+    background-image: url(../img/pexels-david-dibert-635518.jpg);
+}
+.img-3{
+    background-image: url(../img/img3.jpg);
+}
+
+#chi-siamo{
+    padding: 5rem;
+    text-align: center;
+    opacity: 0;
+}
+
+#barche{
+    padding-top: 0rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #1D3557;
+}
+
+.text>*{
+    position: relative;
+    z-index: 1;
+    margin: 20px 15%;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.img-barche{
+    height: 300px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.img1{
+    background-image: url(../img/img1.jpg);
+}
+
+.img2{
+    background-image: url(../img/img6.jpg);
+}
+
+.text{
+    position: relative;
+}
+
+.text::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    height: 125%;
+    background: #A8DADC;
+    rotate: -3deg;
+    translate: -50% -50%;
+}
+
+.animate {
+    animation: fade-in 3s forwards; /* Applica l'animazione */
+}
+  
+@keyframes fade-in {
+    from {
+      opacity: 0; /* Opacità di partenza */
+    }
+    to {
+      opacity: 1; /* Opacità finale */
+    }
+}
+
+#contatti{
+    background-color: #1D3557;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 4rem;
+}
+
+#info a{
+    color: white;
+    text-decoration: none;
+}
+
+#info a:hover{
+    color: rgb(94, 94, 125);
+}
+
+.enterprise{
+    margin-top: 2rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 550px) {
+    
+    #chi-siamo{
+        padding: 2rem;
+    }
+
+    #info{
+        margin-bottom: 2rem;
+    }
+
+    #contatti{
+        flex-direction: column;
+    }
+}
